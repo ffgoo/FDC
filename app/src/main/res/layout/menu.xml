@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        //자동모드
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:shape="rectangle"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="자동모드"
+
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:shape="rectangle"
+                android:background="@drawable/back"
+
+                />
+
+        </LinearLayout>
+        //모드 메뉴
+        <!--<LinearLayout-->
+             <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="10"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:shape="rectangle"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="6"-->
+                <!--android:gravity="center"-->
+                <!--android:text="먼지가 심한곳 우선 운행"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20dp"-->
+                <!--android:background="@drawable/back"/>-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="2"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="리모컨"-->
+                <!--android:textSize="15dp"-->
+                <!--android:background="@drawable/back"-->
+                <!--android:id="@+id/btnRemote"/>-->
+            <!--<Switch-->
+                <!--android:layout_width="0px"-->
+                <!--android:layout_height="31dp"-->
+                <!--android:layout_weight="2"-->
+                <!--android:track="@drawable/selecter"-->
+                <!--android:thumb="@drawable/switch_thumb"-->
+                <!--android:id="@+id/switch1"/>-->
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="시간 예약 운행"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/back"
+                android:id="@+id/timetext"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="시간 설정"
+                android:textSize="15dp"
+                android:background="@drawable/back"
+                android:id="@+id/btntime"/>
+            <Switch
+                android:layout_width="0px"
+                android:layout_height="31dp"
+                android:layout_weight="2"
+                android:track="@drawable/selecter"
+                android:thumb="@drawable/switch_thumb"
+                android:id="@+id/switch2"/>
+
+        </LinearLayout>
+
+
+
+        //바람세기
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="세기 조절"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/back"
+
+                />
+
+        </LinearLayout>
+
+
+        //세기 메뉴
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="8"
+                android:max="100">
+            </ProgressBar>
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus"
+                android:id="@+id/minus"/>
+        </LinearLayout>
+
+
+
+        //현재 위치
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="현재 위치"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="30dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="30dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="30dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="30dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="30dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/con"
+                android:id="@+id/now1"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/now2"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/now3"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/now4"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/now5"/>
+        </LinearLayout>
+
+        //배터리잔량
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+
+            >
+            //미세먼지 측정기 연결상태
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="미세먼지 측정기 연결상태"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:textStyle="bold"
+                >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="30dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="30dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="30dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/con"
+                android:id="@+id/con1"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/con"
+                android:id="@+id/con2"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/con3"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/con4"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/uncon"
+                android:id="@+id/con5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            >
+            <Button
+                android:layout_marginLeft="160dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="기기 검색"
+                android:textStyle="bold"
+                android:id="@+id/search1"
+                android:background="@drawable/back"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

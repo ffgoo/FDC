@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    android:background="#FFFFFF">
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="8"
+        android:weightSum="8"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="1번 미세먼지 농도"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:id="@+id/tvRecive"
+                    android:background="@drawable/back"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="2번 미세먼지 농도"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:id="@+id/tvRecive2"
+                android:background="@drawable/back"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.5"
+        android:weightSum="3">
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:id="@+id/btnone"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:src="@drawable/first" />
+
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:id="@+id/btntwo"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:src="@drawable/two" />
+
+
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:orientation="horizontal"
+
+    android:weightSum="4">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:src="@drawable/poweroff"
+        android:background="@drawable/backcircle2"
+        android:id="@+id/power"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/backcircle2"
+        android:text="AUTO"
+        android:textColor="#BDBDBD"
+        android:id="@+id/btnauto"
+        />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:src="@drawable/bluetooth"
+        android:background="@drawable/backcircle"
+        android:id="@+id/btnblue"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:src="@drawable/remoteoff"
+        android:background="@drawable/backcircle2"
+        android:id="@+id/btnremote"/>
+
+
+</LinearLayout>
+
+</LinearLayout>
